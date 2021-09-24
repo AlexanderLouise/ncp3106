@@ -1,38 +1,267 @@
-<html  lang="en">
-	<head>
-		<title>HOME PAGE</title>
-		
-<meta charset="UTF 8">
-<link rel="stylesheet" href="index.css"/>
-</head>
-	<body>
-		<div class="lside">
-			<div class="image">
-				<img src="alex.jpg">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+	
+	</style>
+    <title>PORTFOLIO</title>
+  </head>
+  <body class="bg-light">
+    <!--NAVBAR-->
+    <nav class="navbar navbar-light fixed-top bg-light shadow-sm">
+		<div class="container-lg">
+			<a class="navbar-brand text-danger" href="#" style="font-family: 'Cabin', sans-serif;">QUAD</a>
+			<div class="dropdown">
+				<button class="btn btn-secondary btn-danger px-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+				<ion-icon name="menu-outline"></ion-icon>
+				</button>
+				<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+					<li><a class="dropdown-item" href="#home" style="font-family: 'Cabin', sans-serif;">Home</a></li>
+					<li><a class="dropdown-item" href="#about" style="font-family: 'Cabin', sans-serif;">About</a></li>
+					<li><a class="dropdown-item" href="#portfolio" style="font-family: 'Cabin', sans-serif;">Portfolio</a></li>
+					<li><a class="dropdown-item" href="#contact" style="font-family: 'Cabin', sans-serif;">Contact</a></li>
+				</ul>
 			</div>
-			<p>You are the SEMICOLON to my STATEMENTS;</p>
-			<h5>ALEX, 2021</h5>
 		</div>
-		<div class="rside">
-			<h1>ALEXANDER LOUISE E. PALACIO</h1>
-			<h2>19 ● Student ● Computer Engineering</h2>
-			<h3>My Portfolio</h3>
-			<div class="id">
-				<a href="bio.html"><div class="mp1">
-					<a href="bio.html"><h4 style="color:white;">Machine Problem 1</h4></a>
-				</div></a>
-				<a href="aaa.html"><div class="mp2">
-					<a href="aaa.html"><h4 style="color:black;">Machine Problem 2</h4></a>
-				</div></a>
-				<a href="index.html"><div class="mp3">
-					<a href="index.html"><h4 style="color:white;">Machine Problem 3</h4></a>
-				</div></a>
-				<a href="portfolio.html"><div class="mp4">
-					<a href="portfolio.html"><h4 style="color:black;">Machine Problem 4</h4></a>
-				</div></a>
+	</nav>
+	<!--HOME-->
+	<section class="home py-4" id="home">
+		<div class="container-lg"> 
+			<div class="row min-vh-100 align-items-center align-content-center">
+				<div class="col-md-6 mt-5 mt-md-0">
+					<div class="home-img text-center">
+						<img src="alex.jpg" alt="profile image" class="rounded-circle mw-100" style="width:550px;"> 
+					</div>
+				</div>
+				<div class="col-md-6 mt-5 mt-md-0 order-md-first">
+					<div class="home-text">
+						<p class="text-muted mb-1" style="font-family: 'Lato', sans-serif;">HELLO I'M</p>
+						<h1 class="text-danger text-uppercase fs-4 " style="font-family: 'Cabin', sans-serif;">Computer Engineering Student</h1>
+						<h2 class="fs-1 fw-bold d-flex" style="font-family: 'Cabin', sans-serif;">Alexander Louise E. Palacio</h2>
+						<p class="mt-4 text-muted" style="font-family: 'Lato', sans-serif;">You are the SEMICOLON to my STATEMENTS;</p>
+						<a href="#portfolio" class="btn btn-danger px-4 mt-3" style="font-family: 'Cabin', sans-serif;">Portfolio</a>
+					</div>
+				</div>
 			</div>
 		</div>
-		
-		
-	</body>
+	</section>
+	<!--ABOUT-->
+	<section class="about py-5 mb-5" id="about">
+		<div class="container-lg py-4" >
+			<div class="row justify-content-center pt-5">
+				<div class="col-lg-8">
+					<div class="section-title text-center">
+						<h2 class="fw-bold mb-5 fs-1 shadow-sm" style="font-family: 'Cabin', sans-serif;">ABOUT ME</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 mt-5 mt-md-0 pt-5">
+					<div class="about-text">
+						<h3 class="fs-3 mb-3 text-uppercase" style="font-family: 'Cabin', sans-serif;">Failure doesn't mean GAME OVER, it means try again with experience</h3>
+						<p class="text-muted" style="font-family: 'Lato', sans-serif;">QUAD, 2020</p>
+					</div>
+					<div class="row text-center text-uppercase my-3 pt-3">
+						<div class="col-sm-4">
+							<div class="fact-item">
+								<h4 class="fs-1 fw-bold" style="font-family: 'Cabin', sans-serif;">100</h4>
+								<p class="text-muted" style="font-family: 'Lato', sans-serif;">Games Competed</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="fact-item">
+								<h4 class="fs-1 fw-bold" style="font-family: 'Cabin', sans-serif;">90</h4>
+								<p class="text-muted" style="font-family: 'Lato', sans-serif;">Happy Friends</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="fact-item">
+								<h4 class="fs-1 fw-bold" style="font-family: 'Cabin', sans-serif;">95</h4>
+								<p class="text-muted" style="font-family: 'Lato', sans-serif;">Gameplay feedback</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12 d-flex align-items-center pt-3">
+							<a href="#" class="btn px-3 btn-danger me-5" style="font-family: 'Cabin', sans-serif;">Download</a>
+							<div class="social-links">
+								<a href="https://www.facebook.com/alexander.palacio.3139" target="_blank" class="text-dark me-2 fs-1"><ion-icon name="logo-facebook"></ion-icon></a>
+								<a href="https://www.instagram.com/alexlouisepalacio/" target="_blank" class="text-dark me-2 fs-1"><ion-icon name="logo-instagram"></ion-icon></a>
+								<a href="https://twitter.com/quadTzy8" target="_blank" class="text-dark me-2 fs-1"><ion-icon name="logo-twitter"></ion-icon></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 mt-5 mt-md-0 pt-5">
+					<div class="skill-item mb-4">
+						<h3 class="fs-6" style="font-family: 'Cabin', sans-serif;">Valorant</h3>
+						<div class="progress" style="height: 10px;">
+							<div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+							</div>
+						</div>
+					</div>
+					<div class="skill-item mb-4">
+						<h3 class="fs-6" style="font-family: 'Cabin', sans-serif;">Genshin Impact</h3>
+						<div class="progress" style="height: 10px;">
+							<div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+							</div>
+						</div>
+					</div>	
+					<div class="skill-item mb-4">
+						<h3 class="fs-6" style="font-family: 'Cabin', sans-serif;">Dota 2</h3>
+						<div class="progress" style="height: 10px;">
+							<div class="progress-bar bg-danger" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+							</div>
+						</div>
+					</div>	
+					<div class="skill-item">
+						<h3 class="fs-6" style="font-family: 'Cabin', sans-serif;">Mobile Legends</h3>
+						<div class="progress" style="height: 10px;">
+							<div class="progress-bar bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--PORTFOLIO-->
+	<section class="portfolio py-5" id="portfolio">
+		<div class="container-lg py-4 mt-5">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="section-title text-center">
+						<h2 class="fw-bold mb-5 fs-1 shadow-sm" style="font-family: 'Cabin', sans-serif;">Machine Problems</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<div class="portfolio-item">
+						<img src="1st.png" class="w-80 img-thumbnail shadow-lg" alt="portfolio item">
+						<h3 class="text-capitalize fs-4 my-2" style="font-family: 'Cabin', sans-serif;">machine problem 1</h3>
+						<p class="mb-4"><a href="bio.html" target=_blank class="text-decoration-none btn px-3 btn-danger me-5" style="font-family: 'Cabin', sans-serif;">MP1</a></p>
+					</div>
+				</div>	
+				<div class="col-md-6 col-lg-4">
+					<div class="portfolio-item">
+						<img src="3rd.png" class="w-80 img-thumbnail shadow-lg" alt="portfolio item">
+						<h3 class="text-capitalize fs-4 my-2" style="font-family: 'Cabin', sans-serif;">machine problem 2</h3>
+						<p class="mb-4"><a href="aaa.html" target=_blank class="text-decoration-none btn px-3 btn-danger me-5" style="font-family: 'Cabin', sans-serif;">MP2</a></p>
+					</div>
+				</div>	
+				<div class="col-md-6 col-lg-4">
+					<div class="portfolio-item">
+						<img src="third.png" class="w-80 img-thumbnail shadow-lg" alt="portfolio item">
+						<h3 class="text-capitalize fs-4 my-2" style="font-family: 'Cabin', sans-serif;">machine problem 3</h3>
+						<p class="mb-4"><a href="index.html" target=_blank class="text-decoration-none btn px-3 btn-danger me-5" style="font-family: 'Cabin', sans-serif;">MP3</a></p>
+					</div>
+				</div>	
+			</div>
+			
+		</div>
+	</section>	
+	<div class="py-1">
+	
+	</div>
+	<!--CONTACT-->
+	<section class="contact py-5" id="contact">
+		<div class="container-lg py-4 mt-5">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="section-title text-center">
+						<h2 class="fw-bold mb-5 fs-1 shadow-sm" style="font-family: 'Cabin', sans-serif;">Contact Me</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<div class="contact-item d-flex mb-3">
+						<div class="icon fs-4 text-danger">
+						 	<ion-icon name="mail-open-outline"></ion-icon>
+						</div>
+						<div class="text ms-3">
+							<h3 class="fs-5" style="font-family: 'Cabin', sans-serif;">Email</h3>
+							<p class="text-muted m-0" style="font-family: 'Lato', sans-serif;">example@gmail.com</p>
+						</div>
+					</div>
+					
+					<div class="contact-item d-flex mb-3">
+						<div class="icon fs-4 text-danger">
+							<ion-icon name="call-outline"></ion-icon>
+						</div>
+						<div class="text ms-3">
+							<h3 class="fs-5" style="font-family: 'Cabin', sans-serif;">Phone</h3>
+							<p class="text-muted m-0" style="font-family: 'Lato', sans-serif;">+63 956 338 1110</p>
+						</div>
+					</div>
+					
+					<div class="contact-item d-flex mb-3">
+						<div class="icon fs-4 text-danger">
+							<ion-icon name="location-outline"></ion-icon>
+						</div>
+						<div class="text ms-3">
+							<h3 class="fs-5" style="font-family: 'Cabin', sans-serif;">Visit Office</h3>
+							<p class="text-muted m-0" style="font-family: 'Lato', sans-serif;">78 Santolan Rd. Brgy. Valencia Q.C.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="contact-form">
+						<form>
+							<div class="row">
+								<div class="col-lg-6 mb-4">
+									<input type="text" placeholder="Name" class="form-control form-control-lg fs-6 border-0 shadow-sm" style="font-family: 'Lato', sans-serif;">
+								</div>
+								<div class="col-lg-6 mb-4">
+									<input type="text" placeholder="Email" class="form-control form-control-lg fs-6 border-0 shadow-sm" style="font-family: 'Lato', sans-serif;">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12 mb-4">
+									<input type="text" placeholder="Subject" class="form-control form-control-lg fs-6 border-0 shadow-sm" style="font-family: 'Lato', sans-serif;">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12 mb-4">
+									<textarea rows="5" placeholder="Message" class="form-control form-control-lg fs-6 border-0 shadow-sm" style="font-family: 'Lato', sans-serif;"></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target=_blank class="btn px-3 btn-danger me-5" style="font-family: 'Cabin', sans-serif;">Send Message</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!--FOOTER-->
+	<footer class="footer border-top py-4">
+		<div class="container-lg">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="m-0 text-center text-muted" style="font-family: 'Cabin', sans-serif;">&copy; 2021 Quad</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>
